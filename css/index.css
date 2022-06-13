@@ -82,7 +82,7 @@ i{
     font-size: 2em;
 }
 
-@media (max-width: 30em) {
+@media only screen and (max-width: 30em) {
     .container{
         padding: 1em;
     }
