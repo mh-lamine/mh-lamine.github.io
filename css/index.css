@@ -126,13 +126,17 @@ main h2{
     }
 }
 @media only screen and (max-width: 53em){
-    .main-content{
+    .main--content{
         display: block;
     }
+    .main--img{
+        display: block;
+        width: 20em;
+        margin: 0 auto;
+    }
     .main--text{
-        text-align: right;
         margin: 1em auto;
-        width: 15em;
+        width: 80%
     }
 }
 @media only screen and (max-width: 30em){
@@ -178,8 +182,18 @@ main h2{
     i{
         padding: 10px;
     }
+
+    .main--content{
+        display: block;
+        
+    }
     .main--text{
-        text-align: left;
-        margin: 0 5em;
+        text-align: center;
+    }
+    .main--img{
+        display: block;
+        width: 80%;
+        max-width: 15em;
+        margin: 0 auto;
     }
 }
