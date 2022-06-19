@@ -76,6 +76,11 @@ p{
     letter-spacing: 2px;
     transition: .2s;
 }
+#decouvrir:hover{
+    letter-spacing: 4px;
+    background: #827397;
+    color: #fff;
+}
 .socials{
     width: 5em;
     display: flex;
@@ -94,51 +99,27 @@ main h2{
     text-align: center;
     background: #333;
 }
-.main--container{
-    background: black;
-    margin: 2em;
-    padding: 2em;
+.rea{
+    display: grid;
+    width: 100vw;
+    grid-template-columns: repeat(3, 1fr);
 }
-.main--content{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1em;
-    border: 1px solid white;
+.rea img{
+    width: 100%;
+    padding: .1em;
+    border: .1em solid #111;
 }
-#middle-content{
-    margin: 2em 0;
-}
-.main--text{
-    text-align: center;
-    margin: 0 5em;
-}
-.main--img{
-    width: 20em;
-}
-
 /* media queries */
 
-@media only screen and (max-width: 60em){
-    .main--container{
-        margin: 0;
-        padding: 2em;
+@media only screen and (max-width: 45em){
+    .rea{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .hide-on-medium{
+        display: none;
     }
 }
-@media only screen and (max-width: 53em){
-    .main--content{
-        display: block;
-    }
-    .main--img{
-        display: block;
-        width: 20em;
-        margin: 0 auto;
-    }
-    .main--text{
-        margin: 1em auto;
-        width: 80%
-    }
-}
+
 @media only screen and (max-width: 30em){
     .header--container{
         padding: 1em;
@@ -182,18 +163,10 @@ main h2{
     i{
         padding: 10px;
     }
-
-    .main--content{
-        display: block;
-        
+    .rea{
+        grid-template-columns: 1fr;
     }
-    .main--text{
-        text-align: center;
-    }
-    .main--img{
-        display: block;
-        width: 80%;
-        max-width: 15em;
-        margin: 0 auto;
+    .hide-on-small{
+        display: none;
     }
 }
